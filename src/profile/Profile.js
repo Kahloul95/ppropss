@@ -7,8 +7,9 @@ import PropTypes from "prop-types";
   showAlert,
   children,
 }) => {*/
+  
   const Profile = (props) => {
-  console.log(props);
+ console.log(props);
   return (
     <div className="card" style={myStyle}>
       <h3 className="card-header" style={{ color: "blue" }}>

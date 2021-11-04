@@ -1,9 +1,12 @@
 import Profile from "./profile/Profile";
 import image from "./profile/logo.jpg";
 import './App.css';
+import { Component } from "react";
 
-function App() {
-  const showAlert = (name) => alert(user.fullNAME);
+class App extends Component {
+  
+  render (){
+    const showAlert = (name) => alert(user.fullNAME);
   const user = {
     fullNAME: "kahloul sami",
     bio: "Full-stack Web Developer",
@@ -11,15 +14,17 @@ function App() {
     addition to my engineering training in communications and networks, I
     wanted to enhance my skills and knowledge by full-stack formation
     within Go my code.`,
+  }
+
+    return (
+      <div className="App">
+        <Profile user={user}
+         showname={showAlert}>
+          <img src={image} alt="myPhoto" />
+        </Profile>
+      </div>
+    )
   };
-  return (
-    <div className="App">
-      <Profile user={user}
-       showname={showAlert}>
-        <img src={image} alt="myPhoto" />
-      </Profile>
-    </div>
-  );
 }
 
 export default App;
