@@ -6,7 +6,7 @@ import { Component } from "react";
 class App extends Component {
   
   render (){
-    const showAlert = (name) => alert(user.fullNAME);
+    const showAlert = (name) => alert(name);
   const user = {
     fullNAME: "kahloul sami",
     bio: "Full-stack Web Developer",
